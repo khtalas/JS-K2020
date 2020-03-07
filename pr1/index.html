@@ -5,20 +5,32 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" href="../lib/w3.css"/>
+        <link rel="stylesheet" href="../lib/index.css"/>
         <script src="index.js"></script>
     </head>
     <body>
         <header class="w3-container w3-bar w3-indigo">
-            <h1 class="w3-bar-item"></h1>
-            <h2 class="w3-bar-item">
-                <a href="../index.html">Back to menu</a>
-            </h2>
+            <div class="w3-container center800">
+                <h1 class="w3-bar-item"></h1>
+                <h2 class="w3-bar-item">
+                    <a href="../index.html">Back to menu</a>
+                </h2>
+            </div>
         </header>
-        <div class="w3-container">
-            <div class="w3-panel">
-                <h2>Exercise 1</h2>
-                <div id="ex1area" class="w3-container"></div>
+        <div id="content" class="w3-container center800">
+            <div class="w3-panel w3-yellow w3-round-large">
+                <h3>Instructions</h3>
                 <hr/>
+                <p>Use form to add new items to ToDo list. Click item text for
+                    editing. Press <kbd>ENTER</kbd> for confirming the edit and
+                    <kbd>ESC</kbd> to cancel. Items need to be at least 5
+                    characters long.</p>
+            </div>
+            <ul id=listArea class="w3-ul">
+                <!-- Will be generated with Javascript -->
+            </ul>
+            <div id="warningArea" class="w3-container">
+                <!-- Will be generated with Javascript -->
             </div>
         </div>
     </body>

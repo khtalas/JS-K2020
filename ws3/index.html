@@ -4,19 +4,68 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" href="../lib/w3.css"/>
+        <link rel="stylesheet" href="../lib/index.css"/>
         <script src="index.js"></script>
     </head>
     <body>
         <header class="w3-container w3-bar w3-red">
-            <h1 class="w3-bar-item"></h1>
-            <h2 class="w3-bar-item">
-                <a href="../index.html">Back to menu</a>
-            </h2>
+            <div class="w3-container center800">
+                <h1 class="w3-bar-item"></h1>
+                <h2 class="w3-bar-item">
+                    <a href="../index.html">Back to menu</a>
+                </h2>
+            </div>
         </header>
-        <div class="w3-container">
+        <div class="w3-container center800">
             <div class="w3-panel">
                 <h2>Exercise 1</h2>
-                <div id="ex1area" class="w3-container"></div>
+                <p>&nbsp;Below you will see three buttons. Edit the source code and add an onClick-events to these buttons.</p>
+                <div class="w3-bar">
+                    <button id="btn_1_1" class="w3-bar-item w3-btn w3-blue">Button 1</button>
+                    <button id="btn_1_2" class="w3-bar-item w3-btn w3-red">Button 2</button>
+                    <button id="btn_1_3" class="w3-bar-item w3-btn w3-green">Button 3</button>
+                </div>
+                <ul>
+                    <li><b>Button 1</b> should open an alert-button, which will say "You clicked me!" </li>
+                    <li> When you see the button working, add the current date after the text by using the Date() -function. HINT. You can get spesific parts of the date by first creating a date 
+                        object var pvm = new Date(). And then calling for methods such as pvm.getDate() and pvm.getHours() etc. See <a 
+                            href="https://www.w3schools.com/js/js_date_methods.asp"> this for details.</a>
+                    </li>
+                    <li><b>Button 2</b> should call a function called showTable()". ShowTable function should output a simple HTML-table (below) to the page. Use document.write to print data. Feel 
+                        free to modify the data on the table. </li>
+                    <li><b>Button 3</b> should print out an HTML table (Name, Addrees, Country) using data from the following JavaScript array. HINT: Use looping to go through the array and print 
+                        the data surrounded by HTML-tags to create the table.
+                    </li>
+                </ul>
+                <div id="tablearea_1"></div>
+                <hr/>
+            </div>
+            <div class="w3-panel">
+                <h2 id="h_2" class="w3-yellow">Exercise 2</h2>
+                <ul>
+                    <li>Add an&nbsp;onMouseOver event on the&nbsp;Heading "Exercise 2" of this page.&nbsp;It should&nbsp;fire when the users mouse is moved
+                        over&nbsp;it. Output "Stepped over my a mouse!" on the console.</li>
+                    <li>Add another event, which will fire then the mouse leaves the Exercise 2 -heading. This time show an alert window to the user saying: "Bye bye mouse!"</li>
+                </ul>
+                <hr/>
+            </div>
+            <div class="w3-panel">
+                <h2>Exercise 3</h2>
+                <p>Below you will see a simple form.</p>
+                <ul>
+                    <li>Add onfocus -event to the&nbsp;textarea below. When the user enters the textarea, it should show a text saying: "Please fill in the form with proper data.". You can try 
+                        modifying the background color of the box as well. &nbsp;
+                    </li>
+                    <li>Try to use onkeydown -event on the textarea. It should calculate the number of keypresses and output them on the screen. Could you think other smart ways to use it?
+                    </li>
+                    <li>When the form button is clicked, check if the textarea is empty. Notify the user with appropriate message. HINT: You can access the Textarea using the following 
+                        command:   <i>document.getElementById("textdata").value</i>. We will study the forms deeper in Workshops 4 and 5.</li>
+                </ul>
+                <p>Keypresses on textarea: <span id="textAreaKeypresses"></span><p/>
+                <form id="form_3" class="w3-panel">
+                    <textarea id="textdata" class="w3-input w3-cyan"></textarea><br>
+                    <button class="w3-btn w3-blue">Send me</button>
+                </form>
                 <hr/>
             </div>
         </div>
