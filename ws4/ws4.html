@@ -21,10 +21,13 @@ img {
 
 </style>
 <script>
-
-<!-- JavaScript goes here -->
-
-
+    function modifyHeading() {
+        const heading = document.getElementsByTagName('h1')[0];
+        heading.innerHTML = 'Modified Heading!';
+    }
+    function secondButton() {
+        const secondButton = document.getElementsByTagName('h2')[1];
+    }
 </script>
 
 <h1>Workshop 4: DOM Scripting</h1>
@@ -35,7 +38,7 @@ img {
 <h2>Exercise 1: Basic  DOM Manipulation</h2>
 <p>&nbsp;Below you will see three buttons. Edit the source code and add an onClick-events to these buttons. Use Developer Console to find the </p>
 <p>
-  <button onclick="">Button 1</button>
+  <button onclick="modifyHeading();">Button 1</button>
   <button onclick="">Button 2</button>
   <button onclick="">Button 3</button>
 </p>
